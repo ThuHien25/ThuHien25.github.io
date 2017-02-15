@@ -1,0 +1,47 @@
+@media print {
+	html, body {display:none;}
+}
+body { 
+	background: #2D2D2D;
+}
+#date-picker {
+	width: 200px;
+	height: 30px;
+	position: relative;
+}
+#date-picker #date {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+#date-picker img {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0px;
+	right: 5px;
+}
+td {
+	padding: 0;
+	margin: 0;
+	width: 60px;
+	height: 30px;
+	border: 1px solid #fff;
+}
+#calendar .btn{
+	font-size: 15px;
+	background: #A9CCE3;
+	color: #2E86C1;
+	border: 1px solid #909497;
+	text-align: center;
+}
+#calendar select {
+	width: 100%;
+	height: 100%;
+}
+#calendar #title {
+	background: #BEBEBE;
+	color: red;
+	font-weight: bold;
+	font-size: 25px;
+}

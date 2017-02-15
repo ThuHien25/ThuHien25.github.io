@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title>Form Ajax</title>
+	<link type = "text/css" rel = "stylesheet" href = "FormAjax.css"/>
+	<script type = "text/javascript" src = "JS/Calendar.js"></script>
+	<script type = "text/javascript" src = "JS/FormAjax.js"></script>
+</head>
+<body>
+	<div id = "FromAjax">
+	<form action = '#' method = "POST">
+		<table class = "table">
+			<tbody>
+				<tr>
+					<td class = "Label">Username:</td>
+					<td class = "Textbox"><input type = "text" name = "username" id = "username"></td>
+					<td id = "errorUsername"></td>
+				</tr>
+				<tr>
+					<td class = "Label">Password:</td>
+					<td><input type = "password" name = "password" id = "password"></td>
+					<td id = "errorPassword"></td>
+				</tr>
+				<tr>
+					<td class = "Label">Email:</td>
+					<td><input type = "text" name = "email" id = "email"></td>
+					<td id = "errorEmail"></td>
+				</tr>
+				<tr>
+					<td class = "Label">Birthday:</td>
+					<td>
+						<div id = "date-picker">
+							<input type = "text" id = "date"  name = "date-picker" disabled />
+							<img src = "Images/JS_Calendar_icon.png" alt = "JS_Calendar_icon" onclick = "openCalendar();"/>
+						</div>
+						<script type = "text/javascript">
+							setDateNowForInput();
+							main();
+						</script>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type = "button" id = "submit" name = "submit" onclick = "btnSubmitClick();">Submit</button>
+						<button type = "refresh" id = "refresh" name = "refresh">Refresh</button>
+					</td>
+					<td></td>
+				</tr>
+			</tbody></table>
+			<h1 id="results"> </h1>
+	</form></div>
+</body>
+</html>
