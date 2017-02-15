@@ -1,0 +1,69 @@
+@media print{
+	html, body {display:none;}
+}
+body {
+	font-family: Georgia, 'Time New Roman', Times, serif;
+	margin: 0;
+}
+#container{
+	margin: auto;
+	Width: 500px;
+	border: 1px solid #0033FF;
+}
+.title{
+	background: url("Images/LiThuyet01_title_bg.gif") repeat-x;
+	height: 25px;
+	line-height: 25px;
+	margin-top: -20px;
+}
+#basic-info { overflow: auto;}
+#basic-info .info{
+	float: right;
+	overflow: scroll;
+	width: 400px;
+	height: 100px;
+}
+#basic-info ul, .facts ul { list-style-type: none; }
+#basic-info li{ margin-left: -30px;}
+
+.facts { margin-bottom: 50px;}
+.facts h4{
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+.facts li { margin-bottom: 5px;}
+.facts li::before{
+	content: url("Images/LiThuyet01_start.gif");
+	margin-right: 3px;
+}
+#post {font-size: 14px;}
+#post .post-content{
+	background: #ECECEC;
+	margin: 0 5px;
+	padding-left: 3px;
+	border: 1px hidden;
+	min-height: 20px;
+}
+#post .post-info span{ color: blue;}
+#post .post-info{
+	background: url("Images/LiThuyet01_comment_bg.gif") no-repeat;
+	margin: -14px 0 -14px 20px;
+}
+#post .post-info p{	margin-left: 8%; }
+
+#form-comment h4{ 
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+#form-comment table{
+	font-size: 14px;
+	width: 100%;
+}
+#form-comment td{	padding-left: 5px;}
+#form-comment .col-01{	width: 100px;}
+#form-comment textarea{
+	width: 98%;
+    resize: none;
+    height: 70px;
+}

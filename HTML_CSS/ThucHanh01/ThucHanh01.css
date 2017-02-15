@@ -1,0 +1,109 @@
+@media print{
+	html, body {display:none;}
+}
+body 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 9pt;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+#container
+{
+	width: 1263px;
+	background-color: #2D2F35;
+	margin: auto;
+	min-height: 700px;
+}
+#header{
+	height: 110px;
+	border-bottom: 1px solid #474A51;
+	margin-bottom: -24px;
+}
+#header .img{ margin-left: 10px; }
+#banner{
+	background: url("Images/ThucHanh01_bg_home_intro.gif") repeat-x;
+	height: 300px;
+	position: relative;
+}
+#banner .content{	
+	width: 400px; 
+	margin-left: 130px; 
+}
+#banner .content h3{
+	color: yellow;
+	font-family: monospace !important;
+	font-size: 19pt;
+	font-weight: 100;
+	margin-bottom: 30px;
+}
+#banner .content img{ 
+	position: absolute; 
+	left: 640px; 
+	top: 0; 
+}
+#menu{
+	height: 140px;
+	border-top: 1px solid #474A51;
+	border-bottom: 1px solid #474A51;
+}
+#menu .menu-list{
+	margin-top: 25px;
+	margin-left: 180px;
+	min-height: 100px;
+	min-width: 50px;
+}
+#menu .menu-item{ 
+	position: relative; 
+	float: left;
+	margin-right: 20px;	
+}
+#menu .index{ 
+	position: absolute;
+	top: 2px;
+	right: 2px; 
+}
+#main{ 
+	height: 370px;
+	border-bottom: 1px solid #474a51;
+    margin-top: -10px;
+	padding-bottom: 10px;
+}
+#main .content{	margin: 10px 135px; }
+#main .content-1, .content-2{width: 400px}
+#main .content-1{
+	float: left;
+	clear: both;
+	background: url("Images/ThucHanh01_home_services_bg_design.gif") no-repeat right bottom;
+}
+#main .content-2{
+	float: right;
+	background: url("Images/ThucHanh01_home_services_bg_marketing.gif") no-repeat top left;
+}
+#main h3{
+	color: yellow;
+	font-family: monospace !important;
+	font-size: 17pt;
+	font-weight: 100;
+	margin-top: 0;
+	margin-bottom: 5px;
+}	
+#main p{ text-align: justify;}
+#main .content-2 h3 { margin-bottom: 35px;}
+#footer{
+	background: #24262A url("Images/ThucHanh01_bg_footer.gif") no-repeat center;
+	height: 120px;
+	text-align: center;
+}
+#footer p{ 
+	font-size: 10pt;
+	width:100%;
+	margin: 0 auto;
+	float: right;
+}
