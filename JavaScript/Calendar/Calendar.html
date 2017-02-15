@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = 'utf-8'/>
+	<title>Calendar</title>
+	<link type = 'text/css' rel = 'stylesheet' href = 'Calendar.css'/>
+	<script type = 'text/javascript' src = 'Calendar.js'></script>
+</head>
+<body>
+	<div id = 'date-picker'>
+		<input type = 'text' id = 'date'  name = 'date-picker' disabled />
+		<img src = 'Images/JS_Calendar_icon.png' alt = 'JS_Calendar_icon' onclick = 'openCalendar();'/>
+	</div>
+	<script type = 'text/javascript'>
+		setDateNowForInput();
+		main();
+	</script>
+</body>
+</html>

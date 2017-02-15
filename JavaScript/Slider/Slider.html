@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = 'utf-8'/>
+	<title>Slider</title>
+	<link type = 'text/css' rel = 'stylesheet' href = 'Slider.css' />
+</head>
+<body>
+	<div id = 'main'>
+		<div id = 'wrap-slider'>
+			<div id = 'slider'>
+				<img id = 'item1' class="slide-box" src = 'Images/JS_Slider_Image01.jpg' alt = 'Slider_Image01'/>
+				<img id = 'item2' class="slide-box" src = 'Images/JS_Slider_Image02.jpg' alt = 'Slider_Image02'/>
+				<img id = 'item3' class="slide-box" src = 'Images/JS_Slider_Image03.jpg' alt = 'Slider_Image03'/>
+				<img id = 'item4' class="slide-box" src = 'Images/JS_Slider_Image04.jpg' alt = 'Slider_Image04'/>
+			</div><!--end #slider -->
+		</div><!--end #wrap-slider -->
+		<span id = 'prev-slide' onclick = prevAction()>Previous</span>
+		<span id = 'next-slide' onclick = nextAction()>Next</span>
+		<div id = 'list-image'>
+			<ul>
+				<li id = 'index1' onclick = onClickIndex(this)>
+					<img src = 'Images/JS_Slider_Image01.jpg' alt = 'Slider_list-Image01'/>
+				</li>
+				<li id = 'index2' onclick = onClickIndex(this)>
+					<img src = 'Images/JS_Slider_Image02.jpg' alt = 'Slider_list-Image02'/>
+				</li>
+				<li id = 'index3' onclick = onClickIndex(this)>
+					<img src = 'Images/JS_Slider_Image03.jpg' alt = 'Slider_list-Image03'/>
+				</li>
+				<li id = 'index4' onclick = onClickIndex(this)>
+					<img src = 'Images/JS_Slider_Image04.jpg' alt = 'Slider_list-Image04'/>
+				</li>
+			</ul>
+		</div>
+	</div><!--end #main -->
+	<script type = 'text/javascript' src = 'JS_Slider.js'></script>
+	<script type = 'text/javascript'>
+		setInterval(nextAction, 5000); //5000ms = 3s
+	</script>
+</body>
+</html>
