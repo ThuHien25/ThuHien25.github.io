@@ -5,6 +5,9 @@
 	var context = container.getContext('2d');
 	document.body.appendChild(container);
 
+	var FPS = 144;
+	var TICKS = 1000/FPS;
+
 	var score = 0;
 	var highScore = 0;
 	var heart = 5;
@@ -616,24 +619,33 @@
 	/*Method run*/
 	function main()
 	{
-		createLever();
-		if (MonsterOne.show)
-			updateMonster(MonsterOne);
-		if (MonsterTwo.show)
-			updateMonster(MonsterTwo);
-		if (MonsterThree.show)
-			updateMonster(MonsterThree);
-		if (MonsterFour.show)
-			updateMonster(MonsterFour);
-		if (MonsterFive.show)
-			updateMonster(MonsterFive);
-		if (MonsterSix.show)
-			updateMonster(MonsterSix);
-		if (MonsterSeven.show)
-			updateMonster(MonsterSeven);
-		if (MonsterEight.show)
-			updateMonster(MonsterEight);
-		render();
+		var NOW = Date.now();
+		var differentTime = NOW - lastUpdateTime;
+		if(differentTime >= TICKS) {
+			createLever();
+			if (MonsterOne.show)
+				updateMonster(MonsterOne);
+			if (MonsterTwo.show)
+				updateMonster(MonsterTwo);
+			if (MonsterThree.show)
+				updateMonster(MonsterThree);
+			if (MonsterFour.show)
+				updateMonster(MonsterFour);
+			if (MonsterFive.show)
+				updateMonster(MonsterFive);
+			if (MonsterSix.show)
+				updateMonster(MonsterSix);
+			if (MonsterSeven.show)
+				updateMonster(MonsterSeven);
+			if (MonsterEight.show)
+				updateMonster(MonsterEight);
+			render();
+			lastUpdateTime = NOW;
+		}
+		var sleepTime = TICKS - differentTime;
+		if(sleepTime < 0) {
+			sleepTime = 0;
+		}
 		if (score < 0) {
 			SetDefalult_GameOver();
 		}
@@ -714,4 +726,6 @@
 			randomMonster();
 		}
 	}
+
+	var lastUpdateTime = Date.now();
 	main();
