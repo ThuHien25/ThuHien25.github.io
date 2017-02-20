@@ -36,7 +36,7 @@ body {
 	content: url("Images/LiThuyet01_start.gif");
 	margin-right: 3px;
 }
-#post {font-size: 14px;}
+
 #post .post-content{
 	background: #ECECEC;
 	margin: 0 5px;
@@ -44,12 +44,19 @@ body {
 	border: 1px hidden;
 	min-height: 20px;
 }
+#post .post-content p { 
+	padding: 5px 2px; 
+	font-size: 14px;
+}
 #post .post-info span{ color: blue;}
 #post .post-info{
 	background: url("Images/LiThuyet01_comment_bg.gif") no-repeat;
 	margin: -14px 0 -14px 20px;
 }
-#post .post-info p{	margin-left: 8%; }
+#post .post-info p{	
+	margin-left: 8%; 
+	font-size: 12px;
+}
 
 #form-comment h4{ 
 	text-align: center;
