@@ -24,9 +24,12 @@ div.header {
 	z-index: 200;
 }
 div.inner {
+	display: block;
+	position: relative;
 	margin: 0 auto;
 	min-width:960px;
 	max-width:960px;
+	clear: both;
 }
 h1 {
 	font-size: 12px;
@@ -37,6 +40,7 @@ h1 {
 img.header_logo {
 	float: left;
 	max-width: 430px;
+	width: 100%;
 	height: 99px;
 	margin-top: 10px;
 }
@@ -51,6 +55,7 @@ div.header_info span {
 }
 /*menu*/
 div.nav {
+	position:relative;
 	height: 55px;
 	z-index: 999;
 	background: url(../images/bg_menu.jpg) repeat-x left top;
@@ -129,11 +134,11 @@ div.menu ul li.menu_3 ul.subNav {
 div.menu ul li.menu_4:hover ul.subNav,
 div.menu ul li.menu_3:hover ul.subNav {
 	background: none repeat scroll 0 0 #ffc472;
-	display: block;
+	display: block; 
 	position: absolute;
 	height: auto;
 	margin-left: -3px;
-	top: 216px;
+	top: 53px;
 	width: 141px;
 }
 div.menu ul li ul.subNav li.subNav {
@@ -169,13 +174,7 @@ div.slide {
 	height: 380px;
 }
 /*content*/
-/* .no_margin_top { margin-top: 0; } */
-div.inner {
-	min-width:960px;
-	max-width:960px;
-	margin: 0 auto;
-	clear: both;
-}
+.no_margin_top { margin-top: 0; } 
 div.content {
 	max-width:702px;
 	float: left;
@@ -186,6 +185,7 @@ div.title_1 {
 	padding-bottom: 22px;
 	background: url(../images/line_title.jpg) no-repeat left bottom;
 	height: 7px;
+	text-align: left;
 }
 div.title_1 img { 
 	margin-left: 10px; 
@@ -198,7 +198,12 @@ div.content_1 {
 	max-width:  417px;
 	float: right;
 }
-div.content_1 p, div.content_strong {
+div.content_1 p {
+	margin-bottom: 23px;
+}
+div.content_strong {
+	width: 100%;
+	display: inline-block;
 	margin-bottom: 23px;
 }
 div.content_strong p {
@@ -229,6 +234,12 @@ div.title_3 {
 }
 a.img_button_2 {
 	float: right;
+}
+dl.index {
+	display: inline-block;
+	height: auto;
+	text-align: left;
+	width: 100%;
 }
 dl.index dt {
 	background: url(../images/bullet_1.jpg) no-repeat left 5px;
@@ -301,8 +312,6 @@ img.aside_img_2 {
 }
 div.bg_border_r_3 {
 	border: 4px solid #e9dfd9;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
 	width:192px;
 	padding: 15px 15px 10px 15px;
@@ -352,6 +361,10 @@ div.menu_footer_1 ul {
 div.menu_footer_1 ul li,
 div.menu_footer_2 ul li.menu_1 { 
 	margin: 3px 0; 
+}
+div.menu_footer_1 ul li,
+div.menu_footer_2 ul li {
+	text-align: left;
 }
 div.menu_footer_1 ul li a { 
 	font-size: 14px;
