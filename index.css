@@ -1,0 +1,40 @@
+body{
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, serif;
+}
+header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #2e7bcf;
+}
+header h1{
+	width: 540px;
+    margin-top: 0;
+	margin-left: 330px;
+    margin-bottom: 0.2em;
+    font-size: 40pt;
+    font-weight: normal;
+    line-height: 1;
+	color: white;
+} 
+
+#content{
+	padding-top: 30px;
+	padding-left: 150px;
+}
+#content h1{
+	margin-top: 0;
+    margin-bottom: 0;
+    font-size: 25pt;
+    font-weight: normal;
+    color: #474747;
+}
+#content ul{
+	list-style-position: inside;
+    list-style: disc;
+    padding-left: 50px;
+}
+#content li{
+	display: list-item;
+    text-align: -webkit-match-parent;
+}
+#content a{ text-decoration: none;}
