@@ -256,7 +256,8 @@ dl.index dd {
 div.aside {
 	float:right;
 	width:230px;
-	margin-top:25px;
+	margin: 30px auto;
+	height: auto;
 	text-align:center;
 }
 div.bg_border_r_1 {
