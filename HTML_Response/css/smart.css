@@ -89,3 +89,29 @@
    		padding: 10px 0 70px;
 	}
 }
+@media screen and (min-width: 644px) and (max-width: 980px) {
+	div.header, div.footer, div.nav, div.banner, div.copyright {
+		width: 100%;
+		min-width: 980px !important;
+		max-width: 980px !important;
+	}
+	div.slide, div.inner {
+		margin: 0px 10px !important;
+	}
+	div.content, div.content_1, img.aside_img_2 {
+	    margin: 0;
+	}
+	div.content_1 p {
+		line-height: 20px;
+	}
+	div.box_1 p {
+	    height: 115px;
+	    line-height: 20px;
+	}
+	div.title_3 {
+    	margin: 20px 0 15px 0;
+	}
+	div.footer {
+		margin-top: 400px;
+	}
+}
