@@ -113,6 +113,11 @@
     	margin: 20px 0 15px 0;
 	}
 	div.footer {
-		margin-top: 400px;
+		margin-top: 60%;
+	}
+}
+@media screen and (min-width: 741px) and (max-width: 980px) {
+	div.footer {
+		margin-top: 5%;
 	}
 }
