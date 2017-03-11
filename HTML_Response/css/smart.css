@@ -89,6 +89,10 @@
    		padding: 10px 0 70px;
 	}
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> develop
 @media screen and (min-width: 644px) and (max-width: 980px) {
 	div.header, div.footer, div.nav, div.banner, div.copyright {
 		width: 100%;
@@ -112,6 +116,15 @@
     	margin: 20px 0 15px 0;
 	}
 	div.footer {
+<<<<<<< HEAD
 		margin-top: 400px;
+=======
+		margin-top: 60%;
+	}
+}
+@media screen and (min-width: 741px) and (max-width: 980px) {
+	div.footer {
+		margin-top: 5%;
+>>>>>>> develop
 	}
 }
