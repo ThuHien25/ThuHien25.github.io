@@ -86,7 +86,7 @@
 	function  checkInput(text, error, string) 
 	{
 		if (isNull(text.value))
-			errorInputNull(text, error, string);
+			errorInputNull(text, errorUsername, string);
 		else if (!checkLength(text.value)) 
 			error.innerHTML = string + " length min 8 letter";
 		else if (!checkValidate(text.value)) 

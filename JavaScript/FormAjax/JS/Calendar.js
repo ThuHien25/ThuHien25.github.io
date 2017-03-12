@@ -36,7 +36,7 @@
 		document.write("<td class = 'btn' onclick = 'btnNextMonthClick();'><a type = 'a' name = 'btnNextMonth'>&#8594;</a></td>");
 		document.write("<td class = 'btn' onclick = 'btnNextYearClick();'><a type = 'a' name = 'btnNextYear'>&#8649;</a></td>");
 		document.write("</tr>");
-		document.write("<tr id = 'title' onclick = 'cancelCalendar();'></tr>");
+		document.write("<tr id = 'title'></tr>");
 	}
 	/*Create data in combobox Years*/
 	function createYears() 
